@@ -1,8 +1,10 @@
+import './About.css'
+
 function About() {
   return (
     <>
       <img></img>
-      <h2></h2>
+      <h2>About Me</h2>
       <p></p>
     </>
   );
