@@ -1,12 +1,5 @@
 import './Navbar.css'
-
-function RenderNavbar({ toggled }) {
-  if (toggled) {
-    return (<Navbar />);
-  } else {
-    return (<></>);
-  }
-}
+import { useRef, useState } from 'react';
 
 function Navbar() {
   return (
@@ -21,4 +14,42 @@ function Navbar() {
   )
 }
 
-export { RenderNavbar , Navbar } 
+function MenuButton({ clickFun, reference }) {
+  return (
+    <div className='menuButtonContainer' ref={ reference } onClick={ clickFun } >
+      <div className='bar1'></div>
+      <div className='bar2'></div>
+      <div className='bar3'></div>
+    </div>
+  )
+}
+
+function RenderNavbar({ toggled }) {
+  if (toggled) {
+    return (<Navbar />);
+  } else {
+    return (<></>);
+  }
+}
+
+function NavbarContainer() {
+  const menuButtonRef = useRef(null);
+  const [toggle, setToggle] = useState(false);
+  const toggleAnimation = 
+    () => {
+       setToggle(!toggle);
+       menuButtonRef.current.classList.toggle('change');
+    };
+
+    return (
+      <>
+      <MenuButton 
+        clickFun={ toggleAnimation } 
+        reference={ menuButtonRef } 
+      />
+      <RenderNavbar toggled={toggle} />
+      </>
+    );
+}
+
+export { NavbarContainer };
