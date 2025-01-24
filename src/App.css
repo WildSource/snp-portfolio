@@ -5,4 +5,9 @@ h1 {
 
 h4 {
   text-align: center;
+  color: #181818;
+}
+
+hr {
+  width: 75%;
 }
