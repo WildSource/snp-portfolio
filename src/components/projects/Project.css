@@ -14,3 +14,8 @@ a {
    text-align: left; 
    padding-left: 5%;
 }
+
+iframe {
+  width: 95%;
+  height: 50vh;
+}
