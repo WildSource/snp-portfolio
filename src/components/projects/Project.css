@@ -1,8 +1,16 @@
 h4 {
   color: #DCDCDC;
-  text-align: left;
 }
 
-iframe {
-  
+a {
+ text-decoration: none; 
+}
+
+.projectContainer {
+   text-align: center; 
+}
+
+.projectContainer > p{
+   text-align: left; 
+   padding-left: 5%;
 }
