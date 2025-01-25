@@ -1,0 +1,16 @@
+h4 {
+  color: #DCDCDC;
+}
+
+a {
+ text-decoration: none; 
+}
+
+.projectContainer {
+   text-align: center; 
+}
+
+.projectContainer > p{
+   text-align: left; 
+   padding-left: 5%;
+}
