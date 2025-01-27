@@ -12,9 +12,9 @@ function Contacts() {
           <h4>GitHub</h4>
           <img src={GitHubLogo}></img>
         </li>
+        <li>
           <h4>LinkedIn</h4>
           <img src={LinkedInLogo}></img>
-        <li>
         </li>
         <li>
           <h4>E-Mail</h4>
