@@ -5,10 +5,10 @@ function Navbar() {
   return (
     <div className='NavbarClass'>
       <ul>
-        <li><h3>Home</h3></li>
-        <li><h3>Projects</h3></li>
-        <li><h3>About</h3></li>
-        <li><h3>Contacts</h3></li>
+        <li><h3><a href='#about'>About</a></h3></li>
+        <li><h3><a href='#skills'>Skills</a></h3></li>
+        <li><h3><a href='#projects'>Projects</a></h3></li>
+        <li><h3><a href='#contacts'>Contacts</a></h3></li>
        </ul>
     </div>
   )

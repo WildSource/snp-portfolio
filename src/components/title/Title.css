@@ -1,7 +1,11 @@
 h1 {
   font-size: 300%;
+  animation-name: appearing;
+  animation-duration: 1s;
 }
 
 h3 {
   font-size: larger;
 }
+
+

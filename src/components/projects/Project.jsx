@@ -3,7 +3,7 @@ import './Project.css';
 function Project() {
   return (
     <div className='projectContainer'>
-      <h2><strong>My Projects</strong></h2>
+            <h2><strong><a name='projects'></a>My Projects</strong></h2>
       <h4><a href='https://waifuwebcomics.com/'>Waifuwebcomics.com</a></h4>              
       <iframe src='https://waifuwebcomics.com/' title='Waifuwebcomics'></iframe>
       <p>

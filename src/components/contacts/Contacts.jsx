@@ -6,7 +6,7 @@ import GmailLogo from '../../assets/logos/Gmail_Logo.svg';
 function Contacts() {
   return (
     <>
-      <h2>Contacts and Socials</h2>
+      <h2><a name='contacts'>Contacts and Socials</a></h2>
       <ul className='ContactsContainer'>
         <li>
           <h4>GitHub</h4>
