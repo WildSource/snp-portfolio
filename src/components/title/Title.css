@@ -6,6 +6,8 @@ h1 {
 
 h3 {
   font-size: larger;
+  animation-name: appearing;
+  animation-duration: 1500ms;
 }
 
 
