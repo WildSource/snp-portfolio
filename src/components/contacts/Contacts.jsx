@@ -1,6 +1,5 @@
 import './Contacts.css';
 import GitHubLogo from '../../assets/logos/github-mark-white.png';
-import LinkedInLogo from '../../assets/logos/LI-In-Bug.png';
 import GmailLogo from '../../assets/logos/Gmail_Logo.svg';
 
 function Contacts() {
@@ -10,11 +9,7 @@ function Contacts() {
       <ul className='ContactsContainer'>
         <li>
           <h4>GitHub</h4>
-          <img src={GitHubLogo}></img>
-        </li>
-        <li>
-          <h4>LinkedIn</h4>
-          <img src={LinkedInLogo}></img>
+          <img id='GitHubLogo' src={GitHubLogo}></img>
         </li>
         <li>
           <h4>E-Mail</h4>

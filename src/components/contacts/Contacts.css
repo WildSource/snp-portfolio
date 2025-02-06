@@ -12,4 +12,17 @@ li {
 }
 
 @media only screen and (min-width: 810px) {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #GitHubLogo {
+    width: 50%; 
+    height: 50%;
+    object-fit: cover;
+  }
+  ul > li {
+    display: inline-block;
+  }
 }
