@@ -8,8 +8,9 @@ function Spinningmodel() {
   useEffect(() => {
     var scene = new THREE.Scene();
     var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    var renderer = new THREE.WebGLRenderer();
+    var renderer = new THREE.WebGLRenderer({ alpha: true });
 
+    renderer.setClearColor( 0x000000, 0 );
     renderer.setSize(window.innerWidth, window.innerHeight);
     refContainer.current && refContainer.current.appendChild( renderer.domElement );
 
@@ -22,7 +23,6 @@ function Spinningmodel() {
 
     var animate = function () {
       requestAnimationFrame(animate);
-      cube.rotation.x += 0.01;
       cube.rotation.y += 0.01;
       renderer.render(scene, camera);
     };
@@ -30,7 +30,7 @@ function Spinningmodel() {
     animate();
   }, []);
   return (
-    <div ref={refContainer}></div>
+    <div id='Spinningmodel' ref={refContainer}></div>
   );
 }
 
