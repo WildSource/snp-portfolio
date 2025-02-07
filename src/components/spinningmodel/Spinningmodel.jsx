@@ -61,7 +61,7 @@ function Spinningmodel() {
   }, []);
 
   return (
-    <div id='Spinningmodel' ref={refContainer}></div>
+          <div id='Spinningmodel' ref={refContainer}></div>
   );
 }
 
