@@ -18,7 +18,7 @@ function Spinningmodel() {
 
     const loader = new GLTFLoader();
     loader.load(
-      '../../../public/spinningmodel.glb',
+      '/spinningmodel.glb',
       (gltf) => {
         modelRef.current = gltf.scene;  // Store the loaded model in the ref
         scene.add(gltf.scene);
@@ -27,6 +27,18 @@ function Spinningmodel() {
       (error) => console.error( error )
     );
 
+      // Add multiple light sources
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+    scene.add(ambientLight);
+
+    const directionalLight1 = new THREE.DirectionalLight(0xffffff, 1);
+    directionalLight1.position.set(5, 5, 5);
+    scene.add(directionalLight1);
+
+    const directionalLight2 = new THREE.DirectionalLight(0xffffff, 1);
+    directionalLight2.position.set(-5, -5, -5);
+    scene.add(directionalLight2);
+
     camera.position.z = 5;
 
     var animate = function () {
@@ -34,7 +46,7 @@ function Spinningmodel() {
 
       // Rotate the loaded model if it exists
       if (modelRef.current) {
-        modelRef.current.rotation.y += 0.01;
+        modelRef.current.rotation.y += 0.005;
       }
 
       renderer.render(scene, camera);
