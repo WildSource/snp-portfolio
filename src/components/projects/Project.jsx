@@ -3,9 +3,9 @@ import './Project.css';
 function Project() {
   return (
     <>
-      <h2><strong><a name='projects'></a>My Projects</strong></h2>
+      <h2><strong><a name='projects'>My Projects</a></strong></h2>
       <div className='projectContainer'>
-        <h4><a href='https://waifuwebcomics.com/'>Waifuwebcomics.com</a></h4>              
+              <h4><a href='https://waifuwebcomics.com/'><div className='link-b'>Waifuwebcomics.com</div></a></h4>              
               <h5><strong>Warning Contains Nudity</strong></h5>
         <iframe src='https://waifuwebcomics.com/' title='Waifuwebcomics'></iframe>
         <p>

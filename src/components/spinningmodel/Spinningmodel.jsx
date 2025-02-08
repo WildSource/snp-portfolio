@@ -46,7 +46,7 @@ function Spinningmodel() {
 
       // Rotate the loaded model if it exists
       if (modelRef.current) {
-        modelRef.current.rotation.y += 0.01;
+        modelRef.current.rotation.y += 0.005;
       }
 
       renderer.render(scene, camera);
