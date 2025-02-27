@@ -9,11 +9,15 @@ function Contacts() {
       <ul className='ContactsContainer'>
         <li>
           <h4>GitHub</h4>
-          <img id='GitHubLogo' src={GitHubLogo}></img>
+          <a href='https://github.com/WildSource'>
+            <img id='GitHubLogo' src={GitHubLogo}></img>
+          </a>
         </li>
         <li>
           <h4>E-Mail</h4>
-          <img src={GmailLogo}></img>
+          <a href='mailto:samuelnguyenphok@gmail.com'>
+            <img src={GmailLogo}></img>
+          </a>
         </li>
       </ul>
     </>
